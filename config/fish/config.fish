@@ -13,6 +13,7 @@
 # set PATH $PYENV_ROOT/bin $PATH
 
 set PATH $HOME/.nix-profile/bin $PATH
+set PATH /nix/var/nix/profiles/default/bin $PATH
 
 set -U EDITOR "vi"
 
