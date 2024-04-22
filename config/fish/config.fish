@@ -20,9 +20,8 @@ alias vim="nvim"
 alias lg="lazygit"
 # alias youtube-dl='python3 /usr/local/bin/youtube-dl'
 alias netchk="ping 8.8.8.8"
-alias vpnchk="ping 10.99.0.1"
 alias git-graph="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
-alias ls='exa --icons -F -H --group-directories-first --git -1'
+alias ls='eza --icons -F -H --group-directories-first --git -1'
 
 $HOME/.nix-profile/bin/starship init fish | source
 # /usr/local/bin/kubectl completion fish | source
