@@ -1,0 +1,247 @@
+# shell = "/usr/local/bin/fish"
+shell = "/Users/rajil/.nix-profile/bin/fish"
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+[colors]
+# When true, bold text is drawn using the bright color variants.
+# Default: false
+draw_bold_text_with_bright_colors = true
+
+[[colors.indexed_colors]]
+# The indexed colors include all colors from 16 to 256.
+# When these are not set, they're filled with sensible defaults.
+# Default: []
+color = "#fe8019"
+index = 16
+
+[[colors.indexed_colors]]
+color = "#d65d0e"
+index = 17
+
+[[colors.indexed_colors]]
+color = "#7b3836"
+index = 18
+
+[[colors.indexed_colors]]
+color = "#544945"
+index = 19
+
+[[colors.indexed_colors]]
+color = "#bdae93"
+index = 20
+
+[[colors.indexed_colors]]
+color = "#ebdbb2"
+index = 21
+
+[colors.bright]
+# This section documents the [colors.bright] table of the configuration.
+ 
+# black = "<string>"
+# Default: "#6b6b6b"
+
+# red = "<string>"
+# Default: "#c55555"
+
+# green = "<string>"
+# Default: "#aac474"
+
+# yellow = "<string>"
+# Default: "#feca88"
+
+# blue = "<string>"
+# Default: "#82b8c8"
+
+# magenta = "<string>"
+# Default: "#c28cb8"
+
+# cyan = "<string>"
+# Default: "#93d3c3"
+
+# white = "<string>"
+# Default: "#f8f8f8"
+
+black = "#665c54"
+blue = "#bdae93"
+cyan = "#d65d0e"
+green = "#3c3836"
+magenta = "#ebdbb2"
+red = "#fe8019"
+white = "#fbf1c7"
+yellow = "#504945"
+
+[colors.cursor]
+# Colors which should be used to draw the terminal cursor.
+# Allowed values are hexadecimal colors like #ff00ff, or CellForeground/CellBackground, which references the affected cell.
+# Default: { text = "CellBackground", cursor = "CellForeground" }
+cursor = "#c6c8d1"
+text = "#161821"
+
+[colors.normal]
+# This section documents the [colors.normal] table of the configuration.
+#
+# black = "<string>"
+# Default: "#181818"
+#
+# red = "<string>"
+# 
+# Default: "#ac4242"
+# 
+# green = "<string>"
+# Default: "#90a959"
+# 
+# yellow = "<string>"
+# Default: "#f4bf75"
+# 
+# blue = "<string>"
+# Default: "#6a9fb5"
+# 
+# magenta = "<string>"
+# Default: "#aa759f"
+# 
+# cyan = "<string>"
+# Default: "#75b5aa"
+# 
+# white = "<string>"
+# Default: "#d8d8d8"
+black = "#1d2021"
+blue = "#83a598"
+cyan = "#8ec07c"
+green = "#b8bb26"
+magenta = "#d3869b"
+red = "#fb4934"
+white = "#d5c4a1"
+yellow = "#fabd2f"
+
+[colors.primary]
+# This section documents the [colors.primary] table of the configuration file.
+
+# foreground = "<string>"
+# Default: "#d8d8d8"
+# 
+# background = "<string>"
+# Default: "#181818"
+# 
+# dim_foreground = "<string>"
+# If this is not set, the color is automatically calculated based on the foreground color.
+# Default: "#828482"
+# 
+# bright_foreground = "<string>"
+# This color is only used when draw_bold_text_with_bright_colors is true.
+# If this is not set, the normal foreground will be used.
+# Default: "None"
+background = "#161821"
+foreground = "#c6c8d1"
+
+[colors.selection]
+# Colors used for drawing selections.
+# Allowed values are hexadecimal colors like #ff00ff, or CellForeground/CellBackground, which references the affected cell.
+# Default: { text = "CellBackground", background = "CellForeground" }
+text = "#161821"
+background = "#c6c8d1"
+
+[font]
+size = 12
+
+[font.offset]
+x = 0
+y = 7
+
+[font.glyph_offset]
+x = 0
+y = 4
+
+[font.normal]
+# Default:
+# Linux/BSD: { family = "monospace", style = "Regular" }
+# Windows: { family = "Consolas", style = "Regular" }
+# macOS: { family = "Menlo", style = "Regular" }
+family = "CommitMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "CommitMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "CommitMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "CommitMono Nerd Font"
+style = "Bold Italic"
+
+[[keyboard.bindings]]
+# To unset a default binding, you can use the action "ReceiveChar" to remove it or "None" to inhibit any action.
+# Multiple keybindings can be triggered by a single key press and will be executed in the order they are defined in.
+# 
+# key = "<string>"
+# The regular keys like "A", "0", and "Я" can be mapped directly without any special syntax. Full list of named keys like "F1" and the syntax for dead keys can be found here:
+# 
+# https://docs.rs/winit/latest/winit/keyboard/enum.NamedKey.html
+# https://docs.rs/winit/latest/winit/keyboard/enum.Key.html#variant.Dead
+# Numpad keys are prefixed by Numpad: "NumpadEnter" | "NumpadAdd" | "NumpadComma" | "NumpadDivide" | "NumpadEquals" | "NumpadSubtract" | "NumpadMultiply" | "Numpad[0-9]".
+# 
+# The key field also supports using scancodes, which are specified as a decimal number.
+action = "Paste"
+key = "V"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Command"
+
+[scrolling]
+# Maximum number of lines in the scrollback buffer.
+# Specifying 0 will disable scrolling.
+# Limited to 100000.
+# 
+# Default: 10000
+history = 10000
+
+[window]
+# Window decorations.
+# 
+# Full
+# Borders and title bar.
+# 
+# None
+# Neither borders nor title bar.
+# 
+# Transparent (macOS only)
+# Title bar, transparent background and title bar buttons.
+# 
+# Buttonless (macOS only)
+# Title bar, transparent background and no title bar buttons.
+# 
+# Default: "Full"
+decorations = "full"
+# Startup mode (changes require restart)
+# 
+# Windowed
+# Regular window.
+# 
+# Maximized
+# The window will be maximized on startup.
+# 
+# Fullscreen
+# The window will be fullscreened on startup.
+# 
+# SimpleFullscreen (macOS only)
+# Same as Fullscreen, but you can stack windows on top.
+# 
+# Default: "Windowed"
+startup_mode = "Fullscreen"
+# Background opacity as a floating point number from 0.0 to 1.0. The value 0.0 is completely transparent and 1.0 is opaque.
+# Default: 1.0
+opacity = 0.8
+title = "Alacrity"
+
+[window.padding]
+x = 6 
+y = 6
+

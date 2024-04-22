@@ -1,0 +1,10 @@
+[
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    // neo/astrovim keybindings
+    "bindings": {
+      "space l r": "editor::Rename",
+      "space l o": "editor::ToggleCodeActions"
+    }
+  }
+]

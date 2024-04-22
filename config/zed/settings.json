@@ -1,0 +1,66 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "Catppuccin Macchiato",
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "autosave": "off",
+  "format_on_save": "on",
+  "preferred_line_length": 100,
+  "ui_font_family": "CommitMono Nerd Font",
+  "buffer_font_family": "CommitMono",
+  "buffer_line_height": "comfortable",
+  "confirm_quit": true,
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "checkOnSave": {
+          "command": "clippy"
+        },
+        "inlayHints": {
+          "maxLength": 10,
+          "lifetimeElisionHints": {
+            "useParameterNames": true,
+            "enable": "skip_trivial"
+          },
+          "closureReturnTypeHints": {
+            "enable": "always"
+          }
+        }
+      },
+      "typescript-language-server": {
+        "initialization_options": {
+          "preferences": {
+            "includeInlayParameterNameHints": "all",
+            "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+            "includeInlayFunctionParameterTypeHints": true,
+            "includeInlayVariableTypeHints": true,
+            "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+            "includeInlayPropertyDeclarationTypeHints": true,
+            "includeInlayFunctionLikeReturnTypeHints": true,
+            "includeInlayEnumMemberValueHints": true
+          }
+        }
+      }
+    }
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_other_hints": true,
+    "show_parameter_hints": true
+  },
+  "terminal": {
+    "font_size": 13,
+    "font_family": "CommitMono Nerd Font"
+  },
+  "relative_line_numbers": true
+}
