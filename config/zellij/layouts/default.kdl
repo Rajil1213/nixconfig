@@ -1,10 +1,10 @@
 layout {
     pane size=1 borderless=true {
         plugin location="file:/Users/rajil/.config/zellij/plugins/zellij-datetime.wasm" {
-	    timezone1 "EST/-4"
-            timezone2 "UTC/0"
-	    timezone1 "ET/-5"
-            timezone5 "NPT/+5.75"
+            timezone1 "NPT/+5.75"
+	    timezone2 "EST/-4"
+            timezone3 "UTC/0"
+	    timezone4 "ET/-5"
             default_timezone "NPT"
             background_color "#0080a0"
             foreground_color "#ffffff"
