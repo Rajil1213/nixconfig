@@ -4,8 +4,20 @@
     stateVersion = "23.11";
     username = "rajil";
     homeDirectory = "/Users/rajil";
-    packages = [ ];
+    packages = with pkgs; [
+      git
+      fish 
+      neovim
+      lazygit
+      alacritty 
+      # uncomment following line when neovim 0.10 is released: https://github.com/neovim/neovim/milestone/36
+      # neovim
+    ];
   };
+  # This is to ensure programs are using ~/.config rather than
+  # /Users/<username>/Library/whatever
+  xdg.enable = true;
+
   programs.home-manager.enable = true;
   # I use fish, but bash and zsh work just as well here. This will setup
   # the shell to use home-manager properly on startup, neat!
