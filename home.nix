@@ -5,6 +5,7 @@
     username = "rajil";
     homeDirectory = "/Users/rajil";
     packages = with pkgs; [
+      jq
       eza
       git
       fish 
@@ -12,6 +13,7 @@
       zoxide
       neovim
       lazygit
+      starship
       alacritty 
       # uncomment following line when neovim 0.10 is released: https://github.com/neovim/neovim/milestone/36
       # neovim
