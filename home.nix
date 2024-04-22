@@ -5,9 +5,11 @@
     username = "rajil";
     homeDirectory = "/Users/rajil";
     packages = with pkgs; [
+      eza
       git
       fish 
       zellij
+      zoxide
       neovim
       lazygit
       alacritty 
