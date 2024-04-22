@@ -1,3 +1,4 @@
+set PATH $HOME/.nix-profile/bin $PATH
 # set PATH $HOME/Library/pnpm $PATH
 # set PATH /usr/local/bin $PATH
 # set PATH $HOME/.cargo/bin $PATH
@@ -23,6 +24,6 @@ alias vpnchk="ping 10.99.0.1"
 alias git-graph="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias ls='exa --icons -F -H --group-directories-first --git -1'
 
-starship init fish | source
+$HOME/.nix-profile/bin/starship init fish | source
 # /usr/local/bin/kubectl completion fish | source
-zoxide init --cmd cd fish | source
+$HOME/.nix-profile/bin/zoxide init --cmd cd fish | source
