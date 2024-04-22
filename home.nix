@@ -7,6 +7,7 @@
     packages = with pkgs; [
       jq
       eza
+      fzf
       git
       fish 
       zellij
