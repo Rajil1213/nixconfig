@@ -7,6 +7,7 @@
     packages = with pkgs; [
       git
       fish 
+      zellij
       neovim
       lazygit
       alacritty 
