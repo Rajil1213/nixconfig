@@ -17,6 +17,7 @@
       lazygit
       starship
       alacritty 
+      ripgrep
       # uncomment following line when neovim 0.10 is released: https://github.com/neovim/neovim/milestone/36
       # neovim
     ];
