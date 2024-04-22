@@ -76,7 +76,7 @@ return {
       "javascript",
       "javascriptreact",
     },
-    opts = function() return { server = require("astronvim.utils.lsp").config "tsserver" } end,
+    opts = function() return { server = require("astrolsp").config "tsserver" } end,
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
