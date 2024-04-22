@@ -18,6 +18,10 @@
       # uncomment following line when neovim 0.10 is released: https://github.com/neovim/neovim/milestone/36
       # neovim
     ];
+
+    # Tell it to map everything in the `config` directory in this
+    # repository to the `.config` in my home directory
+    file.".config" = { source = ./config; recursive = true; };
   };
   # This is to ensure programs are using ~/.config rather than
   # /Users/<username>/Library/whatever
