@@ -1,5 +1,5 @@
 -- from: https://github.com/AstroNvim/astrocommunity/blob/main/lua/astrocommunity/pack/typescript/dap.lua
-local utils = require "astronvim.utils"
+local utils = require "astrocore"
 
 return {
   "mfussenegger/nvim-dap",
