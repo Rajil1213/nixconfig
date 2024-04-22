@@ -9,6 +9,7 @@
       eza
       fzf
       git
+      wget
       fish 
       zellij
       zoxide
