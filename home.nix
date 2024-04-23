@@ -5,6 +5,7 @@
     username = "rajil";
     homeDirectory = "/Users/rajil";
     packages = with pkgs; [
+      # system packages
       jq
       eza
       fzf
@@ -13,13 +14,18 @@
       fish 
       zellij
       zoxide
-      neovim
       lazygit
-      starship
-      alacritty 
       ripgrep
+      starship
+      neofetch
+      alacritty 
       # uncomment following line when neovim 0.10 is released: https://github.com/neovim/neovim/milestone/36
       # neovim
+
+      # dev packages
+      corepack
+      rustup
+      go
     ];
 
     # Tell it to map everything in the `config` directory in this
