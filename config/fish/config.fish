@@ -1,7 +1,7 @@
 # set PATH $HOME/Library/pnpm $PATH
 # set PATH /usr/local/bin $PATH
 # set PATH $HOME/.cargo/bin $PATH
-# set PATH $HOME/nightly/nvim-macos/bin $PATH
+set PATH $HOME/nightly/nvim-macos/bin $PATH
 # set PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
 # 
 # set -x PNPM_HOME $HOME/Library/pnpm
