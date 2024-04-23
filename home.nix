@@ -27,7 +27,8 @@
       corepack
       rustup
       cargo
-      nextest
+      cargo-nextest
+      cargo-audit
       go
     ];
 
