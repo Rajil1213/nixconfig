@@ -23,7 +23,8 @@
       # neovim
 
       # dev packages
-      corepack-nodejs
+      nodejs
+      corepack
       rustup
       go
     ];
