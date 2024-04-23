@@ -44,4 +44,10 @@
   # the shell to use home-manager properly on startup, neat!
   programs.fish.enable = true;
   programs.zsh.enable = true;
+
+  programs.git = {
+    enable = true;
+    userName = "Rajil Bajracharya";
+    userEmail = "imrb1213@gmail.com";
+  };
 }
