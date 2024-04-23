@@ -11,6 +11,7 @@
       fzf
       git
       wget
+      btop
       fish 
       zellij
       zoxide
