@@ -1,16 +1,5 @@
-# set PATH $HOME/Library/pnpm $PATH
-# set PATH /usr/local/bin $PATH
-# set PATH $HOME/.cargo/bin $PATH
+set SHELL $HOME/.nix-profile/bin/fish
 set PATH $HOME/nightly/nvim-macos/bin $PATH
-# set PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
-# 
-# set -x PNPM_HOME $HOME/Library/pnpm
-# 
-# set -x GOPATH $HOME/go
-# set PATH $GOPATH/bin $PATH
-# 
-# set -x PYENV_ROOT $HOME/.pyenv
-# set PATH $PYENV_ROOT/bin $PATH
 
 set PATH $HOME/.nix-profile/bin $PATH
 set PATH /nix/var/nix/profiles/default/bin $PATH
@@ -26,5 +15,4 @@ alias git-graph="git log --graph --abbrev-commit --decorate --format=format:'%C(
 alias ls='eza --icons -F -H --group-directories-first --git -1'
 
 $HOME/.nix-profile/bin/starship init fish | source
-# /usr/local/bin/kubectl completion fish | source
 $HOME/.nix-profile/bin/zoxide init --cmd cd fish | source
