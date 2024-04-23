@@ -26,7 +26,6 @@
       nodejs
       corepack
       rustup
-      cargo
       cargo-nextest
       cargo-audit
       go
