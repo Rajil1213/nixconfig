@@ -26,6 +26,8 @@
       nodejs
       corepack
       rustup
+      cargo
+      nextest
       go
     ];
 
