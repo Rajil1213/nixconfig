@@ -4,6 +4,8 @@ set PATH $HOME/nightly/nvim-macos/bin $PATH
 set PATH $HOME/.nix-profile/bin $PATH
 set PATH /nix/var/nix/profiles/default/bin $PATH
 
+set PATH /usr/local/bin $PATH
+
 set -U EDITOR "vi"
 
 alias vi="nvim"
