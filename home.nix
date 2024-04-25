@@ -29,6 +29,7 @@
       rustup
       cargo-nextest
       cargo-audit
+      cargo-risczero
       go
     ];
 
