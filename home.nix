@@ -34,6 +34,9 @@
       cargo-risczero
       go
       solc
+
+      # build tools
+      protobuf
     ];
 
     # Tell it to map everything in the `config` directory in this
