@@ -33,6 +33,7 @@
       cargo-audit
       cargo-risczero
       go
+      solc
     ];
 
     # Tell it to map everything in the `config` directory in this

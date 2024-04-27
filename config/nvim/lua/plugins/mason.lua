@@ -11,8 +11,10 @@ return {
         "lua_ls",
         "golangci_lint_ls",
         "gopls",
+        "solidity_ls_nomicfoundation",
         "pylsp",
         "rust_analyzer",
+        "solc",
         "tsserver",
         "vimls",
       })
