@@ -4,9 +4,13 @@ set PATH $HOME/nightly/nvim-macos/bin $PATH
 set PATH $HOME/.nix-profile/bin $PATH
 set PATH /nix/var/nix/profiles/default/bin $PATH
 
+set FOUNDRY_DIR $HOME/.foundry
 set PATH $HOME/.foundry/bin $PATH
 
 set PATH /usr/local/bin $PATH
+
+set PNPM_HOME $HOME/.pnpm-store
+set PATH $HOME/.pnpm-store/bin $PATH
 
 set -U EDITOR "vi"
 
