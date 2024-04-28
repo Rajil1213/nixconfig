@@ -41,6 +41,29 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      solhint = {
+        root_dir = require("lspconfig").util.root_pattern ".solhint.json",
+      },
+      efm = {
+        filetypes = { "solidity" },
+        root_dir = require("lspconfig").util.root_pattern ".solhint.json",
+        settings = {
+          languages = {
+            solidity = {
+              {
+                lintStdin = true,
+                lintIgnoreExitCode = true,
+                lintCommand = "solhint stdin",
+                lintFormats = {
+                  " %#%l:%c %#%tarning %#%m",
+                  " %#%l:%c %#%trror %#%m",
+                },
+                lintSource = "solhint",
+              },
+            },
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
