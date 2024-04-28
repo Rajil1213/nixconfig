@@ -16,6 +16,7 @@ return {
         "rust_analyzer",
         "tsserver",
         "vimls",
+        "efm",
       })
     end,
   },
@@ -36,6 +37,7 @@ return {
         "gotests",
         "isort",
         "stylua",
+        "solhint",
       })
     end,
   },
