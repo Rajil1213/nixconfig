@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, nixkpkgs, ... }: {
+  nixpkgs.config.allowUnfree = true;
   # This is required information for home-manager to do its job
   home = {
     stateVersion = "23.11";
@@ -22,6 +23,9 @@
 
       # applications
       alacritty 
+      vscode
+      jetbrains.webstorm
+      jetbrains.rust-rover
       # uncomment following line when neovim 0.10 is released: https://github.com/neovim/neovim/milestone/36
       # neovim
 
