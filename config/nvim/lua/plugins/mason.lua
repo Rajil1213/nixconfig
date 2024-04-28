@@ -14,7 +14,6 @@ return {
         "solidity_ls_nomicfoundation",
         "pylsp",
         "rust_analyzer",
-        "solc",
         "tsserver",
         "vimls",
       })
