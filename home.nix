@@ -1,5 +1,6 @@
 { pkgs, nixkpkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
+
   # This is required information for home-manager to do its job
   home = {
     stateVersion = "23.11";
@@ -8,6 +9,7 @@
     packages = with pkgs; [
       # system packages
       jq
+      yq
       eza
       fzf
       git
@@ -41,6 +43,17 @@
 
       # build tools
       protobuf
+      #TODO: uncomment once clang support is better in Nix
+      # llvmPackages.libclang
+      # llvm
+      # clang
+      automake
+      libtool
+      boost
+      pkg-config
+      libevent
+      openssl
+      zlib
     ];
 
     # Tell it to map everything in the `config` directory in this
