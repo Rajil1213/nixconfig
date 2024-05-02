@@ -18,7 +18,6 @@ end
 require "lazy_setup"
 require "polish"
 
-
 return {
   -- Configure AstroNvim updates
   updater = {
@@ -82,14 +81,14 @@ return {
         settings = {
           ["rust-analyzer"] = {
             check = {
-              command = "clippy",
+              command = "clippy --all --all-features --workspace --tests --benches --examples",
             },
             inlayHints = {
               enable = true,
             },
             diagnostics = {
               enable = true,
-            }
+            },
           },
         },
       },
