@@ -24,3 +24,9 @@ alias ls='eza --icons -F -H --group-directories-first --git -1'
 
 $HOME/.nix-profile/bin/starship init fish | source
 $HOME/.nix-profile/bin/zoxide init --cmd cd fish | source
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+fish_add_path /opt/homebrew/opt/llvm/bin
+set -gx LDFLAGS "-L/opt/homebrew/opt/llvm/lib"
+set -gx CPPFLAGS "-I/opt/homebrew/opt/llvm/include"
