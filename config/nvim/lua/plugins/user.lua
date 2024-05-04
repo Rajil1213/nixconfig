@@ -42,7 +42,9 @@ return {
             args = { "--nocapture" },
           },
           require "neotest-python" {},
-          require "neotest-vitest" {},
+          require "neotest-vitest" {
+            filter_dir = function(name, _rel_path, _root) return name ~= "node_modules" end,
+          },
         },
         status = { virtual_text = true },
         output = { open_on_run = true },
