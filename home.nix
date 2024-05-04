@@ -30,7 +30,7 @@
       # neovim
 
       # dev packages
-      nodejs
+      # nodejs # just use pnpm as the node manager
       corepack
       rustup
       cargo-nextest
