@@ -1,15 +1,16 @@
-set SHELL $HOME/.nix-profile/bin/fish
+set -gx SHELL $HOME/.nix-profile/bin/fish
 set PATH $HOME/nightly/nvim-macos/bin $PATH
 
 set PATH $HOME/.nix-profile/bin $PATH
 set PATH /nix/var/nix/profiles/default/bin $PATH
 
-set FOUNDRY_DIR $HOME/.foundry
+set -gx FOUNDRY_DIR $HOME/.foundry
 set PATH $HOME/.foundry/bin $PATH
 
 set PATH /usr/local/bin $PATH
 
-set PNPM_HOME $HOME/.pnpm-store
+set -gx PNPM_HOME $HOME/.pnpm-store
+set PATH $PNPM_HOME $PATH
 set PATH $HOME/.pnpm-store/bin $PATH
 
 set -U EDITOR "vi"
