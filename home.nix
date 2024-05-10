@@ -23,6 +23,10 @@
       starship
       neofetch
 
+      # tools
+      pango
+      ffmpeg_5
+
       # applications
       alacritty 
       vscode
@@ -38,6 +42,8 @@
       cargo-risczero
       go
       solc
+      python3
+      python311Packages.pip
 
       # build tools
       protobuf
