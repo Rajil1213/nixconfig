@@ -41,7 +41,6 @@
       cargo-audit
       cargo-risczero
       go
-      solc
       python3
       python311Packages.pip
 
