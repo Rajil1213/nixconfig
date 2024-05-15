@@ -42,8 +42,15 @@
       cargo-risczero
       go
       solc-select
-      python3
-      python311Packages.pip
+
+      ## manim deps
+      ### using nix for python is messy
+      # python3
+      # python3Packages.pip
+      # python3Packages.scipy
+      # python3Packages.jupyterlab
+      # python3Packages.ipython
+      # python3Packages.ipykernel
 
       # build tools
       protobuf
@@ -54,7 +61,6 @@
       automake
       libtool
       boost
-      pkg-config
       libevent
       openssl
       zlib
