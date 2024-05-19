@@ -1,6 +1,3 @@
-set -gx SHELL $HOME/.nix-profile/bin/fish
-set PATH $HOME/nightly/nvim-macos/bin $PATH
-
 set PATH $HOME/.nix-profile/bin $PATH
 set PATH /nix/var/nix/profiles/default/bin $PATH
 
