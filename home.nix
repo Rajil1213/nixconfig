@@ -26,6 +26,7 @@
       # tools
       pango
       ffmpeg_5
+      unrar
 
       # applications
       alacritty 
