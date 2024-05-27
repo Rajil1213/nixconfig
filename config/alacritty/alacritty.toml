@@ -39,7 +39,7 @@ index = 21
 
 [colors.bright]
 # This section documents the [colors.bright] table of the configuration.
- 
+
 # black = "<string>"
 # Default: "#6b6b6b"
 
@@ -64,14 +64,13 @@ index = 21
 # white = "<string>"
 # Default: "#f8f8f8"
 
-black = "#665c54"
+black = "#6b6b6b"
 blue = "#bdae93"
 cyan = "#d65d0e"
-green = "#3c3836"
+green = "#5ca5a6"
 magenta = "#ebdbb2"
 red = "#fe8019"
 white = "#fbf1c7"
-yellow = "#504945"
 
 [colors.cursor]
 # Colors which should be used to draw the terminal cursor.
@@ -107,7 +106,7 @@ text = "#161821"
 # 
 # white = "<string>"
 # Default: "#d8d8d8"
-black = "#1d2021"
+black = "#cccccc"
 blue = "#83a598"
 cyan = "#8ec07c"
 green = "#b8bb26"
@@ -242,6 +241,5 @@ opacity = 0.8
 title = "Alacrity"
 
 [window.padding]
-x = 6 
+x = 6
 y = 6
-
