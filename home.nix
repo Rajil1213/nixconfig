@@ -42,6 +42,7 @@
       cargo-risczero
       go
       solc-select
+      bitcoin
 
       ## manim deps
       ### using nix for python is messy
@@ -58,7 +59,8 @@
       # llvmPackages.libclang
       # llvm
       # clang
-      automake
+      # autoconf
+      # automake
       libtool
       boost
       libevent
