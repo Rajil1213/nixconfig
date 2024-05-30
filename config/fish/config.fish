@@ -12,6 +12,8 @@ set PATH $HOME/.pnpm-store/bin $PATH
 
 set PATH $HOME/Library/Python/3.9/bin $PATH
 
+set -gx BTC_HOME "$HOME/Library/Application Support/Bitcoin"
+
 # after installing mactex-no-gui
 set PATH /usr/local/texlive/2024/bin/universal-darwin $PATH
 
