@@ -80,8 +80,12 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-        ["<leader>\\"] = { "<cmd>ToggleTerm direction=vertical<cr>", desc = "Open toggleterm horizontally" },
+        ["<Leader>\\"] = { "<cmd>ToggleTerm direction=vertical<cr>", desc = "Open toggleterm horizontally" },
         ["U"] = { "<cmd>:redo<cr>", desc = "Redo the undone changes" },
+        ["<Leader>fg"] = {
+          function() require("telescope").extensions.live_grep_args.live_grep_args() end,
+          desc = "Find with ripgrep args",
+        },
       },
       t = {
         -- setting a mapping to false will disable it

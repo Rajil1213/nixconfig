@@ -20,6 +20,25 @@ return {
       return opts
     end,
   },
+  {
+    "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-telescope/telescope-live-grep-args.nvim" },
+    config = function(plugin, opts)
+      local telescope = require "telescope"
+
+      require "astronvim.plugins.configs.telescope"(plugin, opts) -- include the default astronvim config that calls the setup call
+
+      telescope.setup {
+        extensions = {
+          live_grep_args = {
+            auto_quoting = true,
+          },
+        },
+      }
+
+      telescope.load_extension "live_grep_args"
+    end,
+  },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
