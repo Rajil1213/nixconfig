@@ -80,8 +80,18 @@ return {
       rust_analyzer = {
         settings = {
           ["rust-analyzer"] = {
-            check = {
-              command = "clippy --all --all-features --workspace --tests --benches --examples",
+            cargo = {
+              buildScripts = {
+                enable = true,
+              },
+            },
+            procMacro = {
+              enable = true,
+            },
+            checkOnSave = {
+              enable = true,
+              command = "clippy",
+              extraArgs = { "--all-features", "--workspace", "--tests", "--benches", "--examples" },
             },
             inlayHints = {
               enable = true,
