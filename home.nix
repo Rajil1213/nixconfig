@@ -39,6 +39,7 @@
       rustup
       cargo-nextest
       cargo-audit
+      cargo-watch
       cargo-risczero
       go
       solc-select
