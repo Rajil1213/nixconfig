@@ -64,6 +64,10 @@ return {
           },
         },
       },
+      cspell = {
+        filetypes = { "markdown" },
+        root_dir = require("lspconfig").util.root_pattern "cspell.json",
+      },
     },
     -- customize how language servers are attached
     handlers = {
