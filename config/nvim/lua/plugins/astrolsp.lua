@@ -64,6 +64,10 @@ return {
           },
         },
       },
+      eslint = {
+        filetypes = { "markdown" },
+        root_dir = require("lspconfig").util.root_pattern "package.json",
+      },
       cspell = {
         filetypes = { "markdown" },
         root_dir = require("lspconfig").util.root_pattern "cspell.json",

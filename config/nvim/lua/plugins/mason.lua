@@ -29,7 +29,6 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       require("astrocore").list_insert_unique(opts.ensure_installed, {
         "golangci-lint",
-        "markdownlint",
         "eslint_d",
         "gofumpt",
         "ruff",

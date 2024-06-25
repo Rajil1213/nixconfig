@@ -9,7 +9,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.markdown" },
+  -- { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.utility.noice-nvim" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   -- customizations
