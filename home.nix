@@ -30,7 +30,6 @@
 
       # applications
       alacritty 
-      vscode
       neovim
 
       # dev packages
