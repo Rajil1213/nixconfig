@@ -43,6 +43,7 @@
       go
       solc-select
       bitcoin
+      poetry
 
       ## manim deps
       ### using nix for python is messy
