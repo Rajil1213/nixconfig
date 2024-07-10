@@ -90,8 +90,7 @@ return {
             },
             checkOnSave = {
               enable = true,
-              command = "clippy",
-              extraArgs = { "--all-features", "--workspace", "--tests", "--benches", "--examples" },
+              command = "clippy --all-features --workspace --tests --benches --examples",
             },
             inlayHints = {
               enable = true,
