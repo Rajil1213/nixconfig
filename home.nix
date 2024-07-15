@@ -40,6 +40,10 @@
       cargo-audit
       cargo-watch
       cargo-risczero
+      # TODO: uncomment when unbroken
+      # cargo-llvm-cov
+      cargo-hack
+      cargo-mutants
       go
       solc-select
       bitcoin
