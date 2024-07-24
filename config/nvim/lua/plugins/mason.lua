@@ -13,7 +13,6 @@ return {
         "gopls",
         "solidity_ls_nomicfoundation",
         "ruff_lsp",
-        "pylsp",
         "rust_analyzer",
         "tsserver",
         "vimls",
