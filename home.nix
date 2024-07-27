@@ -13,6 +13,7 @@
       eza
       fzf
       git
+      jujutsu
       wget
       btop
       fish 
