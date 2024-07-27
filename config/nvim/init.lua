@@ -90,7 +90,7 @@ return {
             },
             checkOnSave = {
               enable = true,
-              command = "clippy --all-features --workspace --tests --benches --examples",
+              command = "cargo clippy --all-features --workspace --tests --benches --examples",
             },
             inlayHints = {
               enable = true,
