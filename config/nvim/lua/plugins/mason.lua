@@ -34,7 +34,6 @@ return {
         "goimports",
         "gomodifytags",
         "gotests",
-        "isort",
         "stylua",
         "solhint",
       })
