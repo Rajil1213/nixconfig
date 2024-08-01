@@ -13,6 +13,7 @@
       eza
       fzf
       git
+      act
       jujutsu
       wget
       btop
