@@ -16,6 +16,8 @@ set -gx BTC_HOME "$HOME/Library/Application Support/Bitcoin"
 
 set PATH $HOME/.cargo/bin $PATH
 
+set PATH $HOME/.local/share/nvim/mason/bin $PATH
+
 # after installing mactex-no-gui
 set PATH /usr/local/texlive/2024/bin/universal-darwin $PATH
 
