@@ -30,7 +30,6 @@ return {
         "golangci-lint",
         "eslint_d",
         "gofumpt",
-        "ruff",
         "goimports",
         "gomodifytags",
         "gotests",
