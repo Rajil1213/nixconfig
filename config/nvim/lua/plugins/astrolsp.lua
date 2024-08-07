@@ -72,10 +72,6 @@ return {
         filetypes = { "markdown" },
         root_dir = require("lspconfig").util.root_pattern "cspell.json",
       },
-      ruff_lsp = {
-        filetypes = { "python" },
-        root_dir = require("lspconfig").util.root_pattern "pyproject.toml",
-      },
     },
     -- customize how language servers are attached
     handlers = {

@@ -12,7 +12,6 @@ return {
         "golangci_lint_ls",
         "gopls",
         "solidity_ls_nomicfoundation",
-        "ruff_lsp",
         "rust_analyzer",
         "tsserver",
         "vimls",
