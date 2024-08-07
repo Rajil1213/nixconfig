@@ -10,6 +10,7 @@
       # system packages
       jq
       yq
+      fd
       eza
       fzf
       git
@@ -27,7 +28,7 @@
 
       # tools
       pango
-      ffmpeg_5
+      ffmpeg_7
       unrar
 
       # applications
