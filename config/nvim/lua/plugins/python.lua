@@ -17,6 +17,7 @@ return {
               -- Use Ruff for organizing imports
               disableOrganizeImports = true,
               analysis = {
+                -- use Ruff for all linting purposes
                 typeCheckingMode = "basic",
                 autoImportCompletions = true,
                 stubPath = vim.env.HOME .. "/typings",
