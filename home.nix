@@ -42,7 +42,6 @@
       cargo-nextest
       cargo-audit
       cargo-watch
-      cargo-risczero
       # TODO: uncomment when unbroken
       # cargo-llvm-cov
       cargo-hack
