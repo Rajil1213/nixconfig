@@ -35,7 +35,7 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     opts = function(_, opts)
-      opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, { "tsserver", "eslint" })
+      opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, { "ts_ls", "eslint" })
     end,
   },
   {
@@ -79,11 +79,11 @@ return {
             },
           },
         },
-        handlers = { tsserver = false }, -- disable tsserver setup, this plugin does it
+        handlers = { ts_ls = false }, -- disable ts_ls setup, this plugin does it
         config = {
           ["typescript-tools"] = { -- enable inlay hints by default for `typescript-tools`
             settings = {
-              tsserver_file_preferences = {
+              ts_ls_file_preferences = {
                 includeInlayParameterNameHints = "all",
                 includeInlayParameterNameHintsWhenArgumentMatchesName = false,
                 includeInlayFunctionParameterTypeHints = true,

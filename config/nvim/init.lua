@@ -64,7 +64,7 @@ return {
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
         -- "lua_ls",
         "prettierd",
-        "tsserver",
+        "ts_ls",
         "volar",
       },
       timeout_ms = 1000, -- default format timeout
@@ -118,7 +118,7 @@ return {
           },
         },
       },
-      tsserver = {
+      ts_ls = {
         settings = {
           typescript = {
             inlayHints = {

@@ -13,7 +13,7 @@ return {
         "gopls",
         "solidity_ls_nomicfoundation",
         "rust_analyzer",
-        "tsserver",
+        "ts_ls",
         "vimls",
         "efm",
       })
