@@ -169,4 +169,10 @@ return {
     config = function() require("nvim-surround").setup {} end,
     event = { "User AstroFile" },
   },
+  {
+    "folke/trouble.nvim",
+
+    config = function() require("trouble").setup {} end,
+    event = { "User AstroFile" },
+  },
 }
