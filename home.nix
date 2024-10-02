@@ -18,7 +18,7 @@
       jujutsu
       wget
       btop
-      fish 
+      fish
       zellij
       zoxide
       lazygit
@@ -32,8 +32,13 @@
       unrar
 
       # applications
-      alacritty 
+      alacritty
       neovim
+      # zed-editor # this is marked as broken
+
+      # aws infra
+      awscli2
+      eksctl
 
       # dev packages
       # nodejs # just use pnpm as the node manager
