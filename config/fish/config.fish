@@ -18,6 +18,10 @@ set PATH $HOME/.cargo/bin $PATH
 
 set PATH $HOME/.local/share/nvim/mason/bin $PATH
 
+# haskell
+set PATH $HOME/.ghcup/bin $PATH
+set PATH $HOME/.cabal/bin $PATH
+
 # after installing mactex-no-gui
 set PATH /usr/local/texlive/2024/bin/universal-darwin $PATH
 
