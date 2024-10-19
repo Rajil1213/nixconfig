@@ -143,34 +143,34 @@ text = "#161821"
 background = "#c6c8d1"
 
 [font]
-size = 12
+size = 18
 
 [font.offset]
 x = 0
-y = 7
+y = 6
 
 [font.glyph_offset]
 x = 0
-y = 4
+y = 3
 
 [font.normal]
 # Default:
 # Linux/BSD: { family = "monospace", style = "Regular" }
 # Windows: { family = "Consolas", style = "Regular" }
 # macOS: { family = "Menlo", style = "Regular" }
-family = "CommitMono Nerd Font"
+family = "MonaspiceNe Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "CommitMono Nerd Font"
+family = "MonaspiceNe Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "CommitMono Nerd Font"
+family = "MonaspiceNe Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "CommitMono Nerd Font"
+family = "MonaspiceNe Nerd Font"
 style = "Bold Italic"
 
 [[keyboard.bindings]]
