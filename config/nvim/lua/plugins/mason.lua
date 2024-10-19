@@ -11,11 +11,12 @@ return {
         "lua_ls",
         "golangci_lint_ls",
         "gopls",
-        "solidity_ls_nomicfoundation",
         "rust_analyzer",
         "ts_ls",
         "vimls",
+        "solidity_ls_nomicfoundation",
         "efm",
+        "hls",
       })
     end,
   },
@@ -26,13 +27,17 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       require("astrocore").list_insert_unique(opts.ensure_installed, {
+        -- golang
         "golangci-lint",
-        "eslint_d",
         "gofumpt",
         "goimports",
         "gomodifytags",
         "gotests",
+        -- js, ts, markdown
+        "eslint_d",
+        -- lua
         "stylua",
+        -- solidity
         "solhint",
       })
     end,

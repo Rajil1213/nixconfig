@@ -157,6 +157,13 @@ return {
           },
         },
       },
+      hls = {
+        settings = {
+          ["haskell-language-server"] = {
+            formattingProvider = "fourmolu",
+          },
+        },
+      },
     },
   },
 
