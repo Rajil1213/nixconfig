@@ -19,6 +19,7 @@
       wget
       btop
       fish
+      just
       zellij
       zoxide
       lazygit
