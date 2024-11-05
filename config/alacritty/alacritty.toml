@@ -158,19 +158,19 @@ y = 3
 # Linux/BSD: { family = "monospace", style = "Regular" }
 # Windows: { family = "Consolas", style = "Regular" }
 # macOS: { family = "Menlo", style = "Regular" }
-family = "MonaspiceNe Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "MonaspiceNe Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "MonaspiceNe Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "MonaspiceNe Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Bold Italic"
 
 [[keyboard.bindings]]
