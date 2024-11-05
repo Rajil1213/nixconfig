@@ -10,7 +10,8 @@ set -gx PNPM_HOME $HOME/.pnpm-store
 set PATH $PNPM_HOME $PATH
 set PATH $HOME/.pnpm-store/bin $PATH
 
-set PATH $HOME/Library/Python/3.9/bin $PATH
+set -Ux PYENV_ROOT $HOME/.pyenv
+fish_add_path $PYENV_ROOT/bin
 
 set -gx BTC_HOME "$HOME/Library/Application Support/Bitcoin"
 
@@ -37,11 +38,12 @@ alias netchk="ping 8.8.8.8"
 alias git-graph="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias ls='eza --icons -F -H --group-directories-first --git -1'
 
-$HOME/.nix-profile/bin/starship init fish | source
-$HOME/.nix-profile/bin/zoxide init --cmd cd fish | source
-
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 fish_add_path /opt/homebrew/opt/llvm/bin
 set -gx LDFLAGS "-L/opt/homebrew/opt/llvm/lib"
 set -gx CPPFLAGS "-I/opt/homebrew/opt/llvm/include"
+
+$HOME/.nix-profile/bin/starship init fish | source
+$HOME/.nix-profile/bin/zoxide init --cmd cd fish | source
+pyenv init - | source
