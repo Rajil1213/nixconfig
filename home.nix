@@ -79,6 +79,9 @@
       libevent
       openssl
       zlib
+
+      # optional tools
+      tokei # code counter
     ];
 
     # Tell it to map everything in the `config` directory in this
