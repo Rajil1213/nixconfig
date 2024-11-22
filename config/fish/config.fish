@@ -23,8 +23,8 @@ set PATH $HOME/.local/share/nvim/mason/bin $PATH
 set PATH $HOME/.ghcup/bin $PATH
 set PATH $HOME/.cabal/bin $PATH
 
-# after installing mactex-no-gui
-set PATH /usr/local/texlive/2024/bin/universal-darwin $PATH
+# sp1 prover
+set PATH $HOME/.sp1/bin $PATH
 
 set PATH "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" $PATH
 
