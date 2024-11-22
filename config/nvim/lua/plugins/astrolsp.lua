@@ -74,6 +74,7 @@ return {
       },
       hls = {
         filetypes = { "haskell" },
+        root_dir = require("lspconfig").util.root_pattern "stack.yaml",
       },
     },
     -- customize how language servers are attached
