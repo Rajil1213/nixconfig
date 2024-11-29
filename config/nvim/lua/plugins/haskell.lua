@@ -7,8 +7,7 @@ local haskell_ft = { "haskell", "lhaskell", "cabal", "cabalproject" }
 local pack = {
   { import = "astrocommunity.pack.yaml" }, -- stack.yaml
   { import = "astrocommunity.pack.json" }, -- hls.json
-  -- FIXME: this throws error when instaling
-  -- { import = "astrocommunity.test.neotest" }, -- neotest-haskell
+  { import = "astrocommunity.test.neotest" },
   {
     "nvim-treesitter/nvim-treesitter",
     optional = true,
@@ -94,7 +93,7 @@ if vim.fn.has "nvim-0.10" == 1 then
         },
       },
     },
-    version = "^4",
+    version = "4.3.0",
     init = function()
       local astrolsp_avail, astrolsp = pcall(require, "astrolsp")
       vim.g.haskell_tools = require("astrocore").extend_tbl({
