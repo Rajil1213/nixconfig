@@ -79,6 +79,7 @@
       libevent
       openssl
       zlib
+      tree-sitter # for some lua packages
 
       # optional tools
       tokei # code counter
