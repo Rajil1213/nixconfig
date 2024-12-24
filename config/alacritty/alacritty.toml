@@ -143,35 +143,35 @@ text = "#161821"
 background = "#c6c8d1"
 
 [font]
-size = 18
+size = 14
 
 [font.offset]
 x = 0
-y = 6
+y = 4
 
 [font.glyph_offset]
 x = 0
-y = 3
+y = 4
 
 [font.normal]
 # Default:
 # Linux/BSD: { family = "monospace", style = "Regular" }
 # Windows: { family = "Consolas", style = "Regular" }
 # macOS: { family = "Menlo", style = "Regular" }
-family = "JetBrainsMono Nerd Font"
-style = "Regular"
+family = "Maple Mono NF"
+style = "ExtraLight"
 
 [font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Bold"
+family = "Maple Mono NF"
+style = "Medium"
 
 [font.italic]
-family = "JetBrainsMono Nerd Font"
-style = "Italic"
+family = "Maple Mono NF"
+style = "ExtraLight Italic"
 
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font"
-style = "Bold Italic"
+family = "Maple Mono NF"
+style = "Medium Italic"
 
 [[keyboard.bindings]]
 # To unset a default binding, you can use the action "ReceiveChar" to remove it or "None" to inhibit any action.
