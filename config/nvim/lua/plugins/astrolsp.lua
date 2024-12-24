@@ -18,7 +18,11 @@ return {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          -- "go",
+          "go",
+          "rust",
+          "vue",
+          "typescript",
+          "javascript",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -27,6 +31,9 @@ return {
       disabled = { -- disable formatting capabilities for the listed language servers
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
         -- "lua_ls",
+        "prettierd",
+        "ts_ls",
+        "volar",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
@@ -41,6 +48,94 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      rust_analyzer = {
+        settings = {
+          ["rust-analyzer"] = {
+            cargo = {
+              buildScripts = {
+                enable = true,
+              },
+            },
+            procMacro = {
+              enable = true,
+            },
+            checkOnSave = true,
+            check = {
+              command = "clippy",
+              extraArgs = { "--all-features", "--tests", "--benches", "--examples" }, -- `--workspace` is implied inside a workspace
+            },
+            inlayHints = {
+              enable = true,
+            },
+            diagnostics = {
+              enable = true,
+            },
+          },
+        },
+      },
+      vue = {
+        settings = {
+          vue = {
+            inlayHints = {
+              missingProps = true,
+              inlineHandlerLeading = true,
+              optionsWrapper = true,
+            },
+            autoInsert = {
+              dotValue = true,
+            },
+            takeOverMode = {
+              enabled = true,
+            },
+          },
+        },
+      },
+      ts_ls = {
+        settings = {
+          typescript = {
+            inlayHints = {
+              includeInlayEnumMemberValueHints = true,
+              includeInlayFunctionLikeReturnTypeHints = true,
+              includeInlayFunctionParameterTypeHints = true,
+              includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
+              includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+              includeInlayPropertyDeclarationTypeHints = true,
+              includeInlayVariableTypeHints = true,
+              includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+              auto = false,
+            },
+            format = {
+              insertSpaceAfterOpeningAndBeforeClosingEmptyBraces = false,
+              insertSpaceBeforeFunctionParenthesis = true,
+            },
+          },
+
+          javascript = {
+            inlayHints = {
+              includeInlayEnumMemberValueHints = true,
+              includeInlayFunctionLikeReturnTypeHints = true,
+              includeInlayFunctionParameterTypeHints = true,
+              includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
+              includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+              includeInlayPropertyDeclarationTypeHints = true,
+              includeInlayVariableTypeHints = true,
+              includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+              auto = false,
+            },
+            format = {
+              insertSpaceAfterOpeningAndBeforeClosingEmptyBraces = false,
+              insertSpaceBeforeFunctionParenthesis = true,
+            },
+          },
+        },
+      },
+      hls = {
+        settings = {
+          ["haskell-language-server"] = {
+            formattingProvider = "fourmolu",
+          },
+        },
+      },
       solhint = {
         root_dir = require("lspconfig").util.root_pattern ".solhint.json",
       },
