@@ -35,11 +35,11 @@
       # applications
       alacritty
       neovim
+      viu
       # ghostty.packages.aarch64-darwin.default # FIXME: uncomment once supported
       # zed-editor # this is marked as broken
 
       # aws infra
-      awscli2
       eksctl
 
       # dev packages
