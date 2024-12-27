@@ -20,6 +20,7 @@
       btop
       fish
       just
+      yazi
       zellij
       zoxide
       lazygit
