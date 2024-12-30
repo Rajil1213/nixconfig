@@ -15,7 +15,7 @@ background-opacity = 0.7
 
 window-theme = "dark"
 # "Ayu Mirage" "Desert" "Tomorrow Night"
-theme = "Ayu Mirage"
+# theme = "Ayu Mirage"
 
 # MacOS-specific
 macos-option-as-alt = "left"
