@@ -7,7 +7,7 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.pack.typescript" },
   -- { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.rust" },
+  -- { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.go" },
   -- { import = "astrocommunity.pack.haskell" }, -- has issues with neotest-haskell
   -- { import = "astrocommunity.pack.markdown" },

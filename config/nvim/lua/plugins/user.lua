@@ -39,9 +39,9 @@ return {
             args = { "-count=1", "-timeout=60s" },
           },
           require "neotest-rust" {
-            args = { "--nocapture" },
+            args = { "--no-capture" }
           },
-          require "neotest-python" {},
+          require("neotest-python"),
           require "neotest-vitest" {
             filter_dir = function(name, _rel_path, _root) return name ~= "node_modules" end,
           },

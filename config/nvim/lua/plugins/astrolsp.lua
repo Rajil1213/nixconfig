@@ -62,7 +62,7 @@ return {
             checkOnSave = true,
             check = {
               command = "clippy",
-              extraArgs = { "--all-features", "--tests", "--benches", "--examples" }, -- `--workspace` is implied inside a workspace
+              extraArgs = { "--all-features", "--tests", "--benches", "--examples", "--no-deps" }, -- `--workspace` is implied inside a workspace
             },
             inlayHints = {
               enable = true,
