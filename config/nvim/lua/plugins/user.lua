@@ -175,4 +175,21 @@ return {
     config = function() require("trouble").setup {} end,
     event = { "User AstroFile" },
   },
+
+  {
+    "github/copilot.vim",
+
+    event = { "LspAttach" },
+    config = function()
+      vim.g.copilot_no_tab_map = true
+      vim.api.nvim_set_keymap("i", "<C-;>", "copilot#Accept('<CR>')", { expr = true, noremap = true, silent = true})
+    end,
+  },
+
+  { "taproot-wizards/bitcoin-script-hints.nvim",
+
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    config = function() require("bitcoin-script-hints").setup {} end,
+    event = { "LspAttach" },
+  }
 }
