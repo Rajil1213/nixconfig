@@ -14,7 +14,7 @@ return {
     },
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
     diagnostics = {
-      virtual_text = true,
+      virtual_text = false, -- this is redundant with `lsp_lines`
       underline = true,
     },
     -- vim options can be configured here
@@ -86,6 +86,7 @@ return {
           function() require("telescope").extensions.live_grep_args.live_grep_args() end,
           desc = "Find with ripgrep args",
         },
+        ["<Leader>lk"] = { "<cmd>lua require('lsp_lines').toggle<cr>", desc = "Toggle LSP lines"},
       },
       t = {
         -- setting a mapping to false will disable it

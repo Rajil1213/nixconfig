@@ -189,7 +189,18 @@ return {
   { "taproot-wizards/bitcoin-script-hints.nvim",
 
     dependencies = { "nvim-treesitter/nvim-treesitter" },
-    config = function() require("bitcoin-script-hints").setup {} end,
+    config = function() require("bitcoin-script-hints").setup() end,
     event = { "LspAttach" },
+  },
+
+  {
+    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+
+    config = function()
+      require("lsp_lines").setup()
+    end,
+
+    event = { "LspAttach" },
+    ft = { "rust" },
   }
 }
