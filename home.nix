@@ -41,6 +41,7 @@
       # zed-editor # this is marked as broken
 
       # aws infra
+      awscli2
       eksctl
 
       # dev packages
