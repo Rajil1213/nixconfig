@@ -202,5 +202,17 @@ return {
 
     event = { "LspAttach" },
     ft = { "rust" },
+  },
+
+  -- setup `background-colour` for `nvim-notify` when using theme with transparent background
+  {
+    "rcarriga/nvim-notify",
+    config = function()
+      ---@diagnostic disable-next-line: missing-fields
+      require("notify").setup {
+        background_colour = "#1f2335",
+      }
+    end,
+    lazy = false,
   }
 }
