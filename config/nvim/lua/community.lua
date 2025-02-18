@@ -12,6 +12,7 @@ return {
   -- { import = "astrocommunity.pack.haskell" }, -- has issues with neotest-haskell
   -- { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.pack.toml" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   -- customizations
   {
