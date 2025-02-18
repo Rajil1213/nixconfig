@@ -1,0 +1,56 @@
+layout {
+    tab_template name="work-tab" {
+        pane size=1 borderless=true {
+            plugin location="file:/Users/rajil/.config/zellij/plugins/zellij-datetime.wasm" {
+                timezone1 "NPT/+5.75"
+	            timezone2 "EST/-4"
+                    timezone3 "UTC/0"
+	            timezone4 "ET/-5"
+                    default_timezone "NPT"
+                    background_color "#0080a0"
+                    foreground_color "#ffffff"
+                    pane_color "#1e1e1e"
+                    enable_right_click true
+                    arrow_separator1 ""
+                    arrow_separator2 ""
+                    arrow_separator3 ""
+                    padding_adjust 0
+                    text_align "right"
+	        }
+        }
+
+        pane size=1 borderless=true {
+            plugin location="tab-bar"
+        }
+
+        children
+
+        pane size=1 borderless=true {
+            plugin location="status-bar"
+        }
+    }
+
+    work-tab name="nixconfig" cwd="~/.config/nixconfig"{
+        pane
+    }
+
+    work-tab name="strata" cwd="~/codebase/strata" {
+        pane
+    }
+
+    work-tab name="bridge" cwd="~/codebase/strata-bridge" {
+        pane
+    }
+
+    work-tab name="bitcoin" cwd="~/external/rust-bitcoin" {
+        pane
+    }
+
+    work-tab name="bitvm" cwd="~/external/BitVM" {
+        pane
+    }
+
+    work-tab name="misc" cwd="~/" {
+        pane
+    }
+}
