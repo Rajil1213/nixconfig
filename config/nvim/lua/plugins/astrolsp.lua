@@ -23,6 +23,7 @@ return {
           "vue",
           "typescript",
           "javascript",
+          "toml",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
