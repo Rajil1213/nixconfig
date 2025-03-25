@@ -2,20 +2,23 @@ layout {
     tab_template name="work-tab" {
         pane size=1 borderless=true {
             plugin location="file:/Users/rajil/.config/zellij/plugins/zellij-datetime.wasm" {
-                timezone1 "NPT/+5.75"
-	            timezone2 "EST/-4"
-                timezone3 "UTC/0"
-	            timezone4 "MDT/-6"
-                    default_timezone "NPT"
-                    background_color "#0080a0"
-                    foreground_color "#ffffff"
-                    pane_color "#1e1e1e"
-                    enable_right_click true
-                    arrow_separator1 ""
-                    arrow_separator2 ""
-                    arrow_separator3 ""
-                    padding_adjust 0
-                    text_align "right"
+
+            timezone1 "NPT/+5.75"
+	        timezone2 "SGT/+8"
+            timezone3 "UTC/0"
+	        timezone4 "ET/-5"
+	        timezone5 "EST/-4"
+
+            default_timezone "NPT"
+            background_color "#0080a0"
+            foreground_color "#ffffff"
+            pane_color "#1e1e1e"
+            enable_right_click true
+            arrow_separator1 ""
+            arrow_separator2 ""
+            arrow_separator3 ""
+            padding_adjust 0
+            text_align "right"
 	        }
         }
 
