@@ -63,6 +63,7 @@ return {
       -- get neotest namespace (api call creates or returns namespace)
       local neotest_ns = vim.api.nvim_create_namespace "neotest"
       vim.diagnostic.config({
+        virtual_lines = true,
         virtual_text = {
           format = function(diagnostic)
             local message = diagnostic.message:gsub("\n", " "):gsub("\t", " "):gsub("%s+", " "):gsub("^%s+", "")
@@ -191,17 +192,6 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter" },
     config = function() require("bitcoin-script-hints").setup() end,
     event = { "LspAttach" },
-  },
-
-  {
-    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-
-    config = function()
-      require("lsp_lines").setup()
-    end,
-
-    event = { "LspAttach" },
-    ft = { "rust" },
   },
 
   -- setup `background-colour` for `nvim-notify` when using theme with transparent background
