@@ -14,7 +14,7 @@ return {
     },
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
     diagnostics = {
-      virtual_text = false, -- this is redundant with `lsp_lines`
+      virtual_lines = true,
       underline = true,
     },
     -- vim options can be configured here
