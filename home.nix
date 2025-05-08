@@ -21,6 +21,7 @@
       fish
       just
       yazi
+      delta
       zellij
       zoxide
       lazygit
