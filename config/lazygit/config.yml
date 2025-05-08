@@ -1,0 +1,18 @@
+git:
+  skipHookPrefix: WIP
+  autoFetch: true
+  autoRefresh: true
+  autoForwardBranches: onlyMainBranches
+  fetchAll: true
+  autoStageResolvedConflicts: true
+  branchLogCmd: git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium {{branchName} --}
+  overrideGpg: false
+  disableForcePushing: false
+  parseEmoji: true
+  truncateCopiedCommitHashesTo: 12
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never --line-numbers
+
+gui:
+  nerdFontsVersion: "3"
