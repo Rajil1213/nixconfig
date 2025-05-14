@@ -38,6 +38,7 @@
       alacritty
       neovim
       viu
+      aerospace
       # ghostty.packages.aarch64-darwin.default # FIXME: uncomment once supported
       # zed-editor # this is marked as broken
 
