@@ -22,8 +22,10 @@
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
-        "checkOnSave": {
-          "command": "clippy"
+        "checkOnSave": true,
+        "check": {
+            "command": "clippy",
+            "extraArgs": ["--all-features", "--tests", "--benches", "--examples", "--no-deps"]
         },
         "inlayHints": {
           "maxLength": 10,
