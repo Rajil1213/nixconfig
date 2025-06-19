@@ -52,14 +52,6 @@ return {
       rust_analyzer = {
         settings = {
           ["rust-analyzer"] = {
-            cargo = {
-              buildScripts = {
-                enable = true,
-              },
-            },
-            procMacro = {
-              enable = true,
-            },
             checkOnSave = true,
             check = {
               command = "clippy",
