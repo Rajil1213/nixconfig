@@ -15,6 +15,7 @@
       fzf
       git
       act
+      dust
       jujutsu
       wget
       btop
