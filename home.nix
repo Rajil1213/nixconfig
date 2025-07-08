@@ -14,6 +14,7 @@
       eza
       fzf
       git
+      gh
       act
       dust
       jujutsu
