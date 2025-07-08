@@ -1,6 +1,6 @@
 git:
   skipHookPrefix: WIP
-  autoFetch: true
+  autoFetch: false
   autoRefresh: true
   autoForwardBranches: none
   fetchAll: true
