@@ -1,22 +1,20 @@
 return {
-  "jameswalls/naysayer.nvim",
-  name = "naysayer",
+  "rebelot/kanagawa.nvim",
+  name = "kanagawa",
   opts = {
-    flavour = "naysayer",
-    no_italic = false,
-    no_bold = false,
-    no_underline = false,
-    transparent_background = true,
+    compile = false,
+    theme = "wave",
+    commentStyle = { italic = true },
+    statementStyle = { bold = true },
+    keywordStyle = { italic = false },
+    typeStyle = {},
+    functionStyle = {},
+    undercurl = true,
+    transparent = false,
+    dimInactive = false,
     background = {
-      light = "naysayer",
-      dark = "naysayer",
-    },
-    integrations = {
-      cmp = true,
-      gitsigns = true,
-      treesitter = true,
-      notify = true,
-      markdown = true,
+      light = "lotus",
+      dark = "wave",
     },
   }
 }
