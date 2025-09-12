@@ -30,6 +30,7 @@ set PATH $HOME/.sp1/bin $PATH
 set XDG_CONFIG_HOME $HOME/.config
 
 set PATH "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" $PATH
+set PATH "/Applications/Docker.app/Contents/Resources/bin" $PATH
 
 set -U EDITOR "vi"
 
