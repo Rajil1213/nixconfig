@@ -27,6 +27,7 @@
       zellij
       zoxide
       lazygit
+      difftastic
       ripgrep
       starship
       neofetch
@@ -63,6 +64,8 @@
       solc-select
       bitcoin
       poetry
+      pprof
+      graphviz # needed for pprof
 
       ## manim deps
       ### using nix for python is messy
@@ -90,6 +93,9 @@
 
       # optional tools
       tokei # code counter
+
+      # temp
+      exercism
     ];
 
     # Tell it to map everything in the `config` directory in this
