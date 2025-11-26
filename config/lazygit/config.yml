@@ -10,9 +10,10 @@ git:
   disableForcePushing: false
   parseEmoji: true
   truncateCopiedCommitHashesTo: 12
-  paging:
-    colorArg: always
-    pager: delta --dark --paging=never --line-numbers
+  pagers: 
+    - pager: delta --dark --paging=never --line-numbers
+      colorArg: always 
+    - externalDiffCommand: difft --color=always
 
 gui:
   nerdFontsVersion: "3"
