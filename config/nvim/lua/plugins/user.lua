@@ -172,12 +172,28 @@ return {
   },
 
   {
-    "github/copilot.vim",
+    "zbirenbaum/copilot.lua",
 
     event = { "LspAttach" },
+    cmd = "Copilot",
     config = function()
-      vim.g.copilot_no_tab_map = true
-      vim.api.nvim_set_keymap("i", "<C-;>", "copilot#Accept('<CR>')", { expr = true, noremap = true, silent = true})
+      require("copilot").setup {
+        suggestion = {
+          enabled = true,
+          auto_trigger = true,
+          trigger_on_accept = false,
+          keymap = {
+            accept = "<C-;>",
+            accept_word = false,
+            accept_line = false,
+            next = "<M-]>",
+            prev = "<M-[>",
+          },
+        },
+        panel = {
+          enabled = false
+        },
+      }
     end,
   },
 
