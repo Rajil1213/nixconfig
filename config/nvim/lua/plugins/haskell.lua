@@ -79,6 +79,7 @@ if vim.fn.has "nvim-0.10" == 1 then
   table.insert(pack, {
     "mrcjkb/haskell-tools.nvim",
     ft = haskell_ft,
+    lazy = false,
     dependencies = {
       -- vim.fn.has >= nvim 0.9 removes plenary dependency
       { "nvim-lua/plenary.nvim", optional = vim.fn.has "nvim-0.9" == 1 },
@@ -93,7 +94,7 @@ if vim.fn.has "nvim-0.10" == 1 then
         },
       },
     },
-    version = "4.3.0",
+    version = "^6",
     init = function()
       local astrolsp_avail, astrolsp = pcall(require, "astrolsp")
       vim.g.haskell_tools = require("astrocore").extend_tbl({
