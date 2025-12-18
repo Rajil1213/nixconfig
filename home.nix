@@ -15,6 +15,7 @@
       fzf
       git
       gh
+      uv
       act
       dust
       jujutsu
