@@ -21,6 +21,7 @@ return {
           "go",
           "rust",
           "vue",
+          "haskell",
           "typescript",
           "javascript",
           "toml",
@@ -55,7 +56,7 @@ return {
             checkOnSave = true,
             check = {
               command = "clippy",
-              extraArgs = { "--all-features", "--tests", "--benches", "--examples", "--no-deps" }, -- `--workspace` is implied inside a workspace
+              extraArgs = { "--tests", "--benches", "--examples", "--no-deps" }, -- `--workspace` is implied inside a workspace
             },
             inlayHints = {
               enable = true,

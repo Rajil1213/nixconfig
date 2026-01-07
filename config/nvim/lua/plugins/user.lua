@@ -39,7 +39,7 @@ return {
             args = { "-count=1", "-timeout=60s" },
           },
           require "neotest-rust" {
-            args = { "--no-capture" }
+            args = { "--no-capture", "--all-features" }
           },
           require("neotest-python"),
           require "neotest-vitest" {

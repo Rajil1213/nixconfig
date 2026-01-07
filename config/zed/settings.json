@@ -25,7 +25,10 @@
         "checkOnSave": true,
         "check": {
             "command": "clippy",
-            "extraArgs": ["--all-features", "--tests", "--benches", "--examples", "--no-deps"]
+            "extraArgs": ["--tests", "--benches", "--examples", "--no-deps"]
+        },
+        "cargo": {
+          "features": "all"
         },
         "inlayHints": {
           "maxLength": 10,
