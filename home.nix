@@ -18,6 +18,7 @@
       uv
       act
       dust
+      entr
       jujutsu
       wget
       btop
