@@ -64,7 +64,6 @@
       cargo-mutants
       go
       solc-select
-      bitcoin
       poetry
       pprof
       graphviz # needed for pprof
