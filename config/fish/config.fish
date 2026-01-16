@@ -51,6 +51,9 @@ $HOME/.nix-profile/bin/starship init fish | source
 $HOME/.nix-profile/bin/zoxide init --cmd cd fish | source
 pyenv init - | source
 
+# Downloaded binaries
+fish_add_path $HOME/bin
+
 # THEME
 set fish_color_autosuggestion brblack
 set fish_color_cancel -r
