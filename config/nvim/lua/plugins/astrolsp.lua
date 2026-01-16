@@ -22,6 +22,7 @@ return {
           "rust",
           "vue",
           "haskell",
+          "python",
           "typescript",
           "javascript",
           "toml",
@@ -161,6 +162,14 @@ return {
         filetypes = { "markdown" },
         root_dir = require("lspconfig").util.root_pattern "cspell.json",
       },
+      ruff_lsp = {
+        filetypes = { "python" },
+        settings = {
+          ruff = {
+            enableExperimentalFormatter = true,
+          }
+        }
+      }
     },
     -- customize how language servers are attached
     handlers = {
